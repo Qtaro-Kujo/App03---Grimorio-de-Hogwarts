@@ -1,4 +1,4 @@
-package com.example.grimoriodehogwarts
+package com.example.grimriodehogwarts
 
 data class ListaResponse<T>(
     val data: List<T>?

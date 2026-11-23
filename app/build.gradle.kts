@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.grimriodehogwarts.R"
+    namespace = "com.example.grimriodehogwarts"
     compileSdk {
         version = release(37)
     }

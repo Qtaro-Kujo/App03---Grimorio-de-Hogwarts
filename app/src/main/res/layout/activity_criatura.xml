@@ -1,10 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.grimriodehogwarts.CriaturaActivity">
+    android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etNomeCriatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome completo da criatura (ex.: Hippogriff)"
+            android:inputType="textCapWords"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/btnBuscarCriatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buscar" />
+
+        <ProgressBar
+            android:id="@+id/progressCriatura"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvNomeCriatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivCriatura"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginTop="12dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/imagem_da_criatura"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvStatusImagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvMensagemCriatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

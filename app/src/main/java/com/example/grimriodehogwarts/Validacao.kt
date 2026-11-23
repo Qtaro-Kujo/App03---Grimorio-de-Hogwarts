@@ -1,4 +1,4 @@
-package com.example.grimoriodehogwarts
+package com.example.grimriodehogwarts
 
 import android.widget.EditText
 
@@ -16,5 +16,6 @@ fun validarEntrada(campo: EditText): String? {
         campo.error = "Digite pelo menos 3 caracteres"
         return null
     }
+    campo.error = null
     return texto
 }
