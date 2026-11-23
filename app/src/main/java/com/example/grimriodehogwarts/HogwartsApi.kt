@@ -1,4 +1,4 @@
-package com.example.grimoriodehogwarts
+package com.example.grimriodehogwarts
 
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -14,6 +14,6 @@ interface HogwartsApi {
     @GET("api/creatures")
     suspend fun buscarCriaturas(
         @Query("search") nome: String,
-        @Query("page_size") pageSize: Int = 10
+        @Query("page_size") pageSize: Int = 20
     ): ListaResponse<Criatura>
 }

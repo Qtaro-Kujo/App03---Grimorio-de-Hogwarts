@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Grimório de Hogwarts</string>
+    <string name="nenhum_personagem_encontrado">Nenhum personagem encontrado</string>
+    <string name="nenhuma_criatura_encontrada">Nenhuma criatura encontrada</string>
+    <string name="imagem_indisponivel">Imagem indisponível</string>
+    <string name="imagem_da_criatura">Imagem da criatura mágica</string>
+    <string name="erro_servidor">Erro no servidor. Tente novamente em instantes.</string>
+    <string name="erro_conexao">Sem conexão ou erro inesperado. Verifique a internet e tente novamente.</string>
 </resources>

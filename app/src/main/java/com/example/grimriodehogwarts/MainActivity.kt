@@ -1,11 +1,9 @@
-package com.example.grimoriodehogwarts
+package com.example.grimriodehogwarts
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.grimriodehogwarts.CriaturaActivity
-import kotlin.jvm.java
 
 class MainActivity : AppCompatActivity() {
 

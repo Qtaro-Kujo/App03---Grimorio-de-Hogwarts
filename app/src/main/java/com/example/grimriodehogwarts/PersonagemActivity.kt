@@ -1,4 +1,4 @@
-package com.example.grimoriodehogwarts
+package com.example.grimriodehogwarts
 
 import android.os.Bundle
 import android.view.View
@@ -8,7 +8,6 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.example.grimriodehogwarts.R
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
 
@@ -51,7 +50,7 @@ class PersonagemActivity : AppCompatActivity() {
                 val personagem = resposta.data?.firstOrNull()
 
                 if (personagem == null) {
-                    tvMensagem.text = "Nenhum personagem encontrado"
+                    tvMensagem.text = getString(R.string.nenhum_personagem_encontrado)
                 } else {
                     tvNome.text = personagem.name.ouNaoInformado()
                     tvEspecie.text = "Espécie: ${personagem.species.ouNaoInformado()}"
@@ -59,13 +58,12 @@ class PersonagemActivity : AppCompatActivity() {
                 }
             } catch (e: HttpException) {
                 if (e.code() == 404) {
-                    tvMensagem.text = "Nenhum personagem encontrado"
+                    tvMensagem.text = getString(R.string.nenhum_personagem_encontrado)
                 } else {
-                    tvMensagem.text = "Erro no servidor. Tente novamente em instantes."
+                    tvMensagem.text = getString(R.string.erro_servidor)
                 }
             } catch (e: Exception) {
-                tvMensagem.text =
-                    "Sem conexão ou erro inesperado. Verifique a internet e tente novamente."
+                tvMensagem.text = getString(R.string.erro_conexao)
             } finally {
                 progress.visibility = View.GONE
                 btnBuscar.isEnabled = true

@@ -1,4 +1,4 @@
-package com.example.grimoriodehogwarts
+package com.example.grimriodehogwarts
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
