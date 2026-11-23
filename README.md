@@ -8,6 +8,8 @@ Aplicativo Android nativo desenvolvido em Kotlin para a disciplina **DS151 - Des
 - **Lucas Labendzs**
   GRR20245121
 - **Nome do Integrante 3**
+- **Kauan Calegari**
+- GRR20243595
 - **Nome do Integrante 4** *(remover caso o grupo tenha 3 integrantes)*
 
 ## Funcionalidades
