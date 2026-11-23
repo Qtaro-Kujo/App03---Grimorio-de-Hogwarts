@@ -3,8 +3,10 @@
 Aplicativo Android nativo desenvolvido em Kotlin para a disciplina **DS151 - Desenvolvimento para Dispositivos Móveis**, que permite consultar personagens e criaturas do universo de Harry Potter por meio da API pública [Hogwarts API](https://hogwarts-api.com/).
 
 ## Integrantes do Grupo
+- **João Alberto François**  
+  GRR20211640
 - **Lucas Labendzs**
-- **Nome do Integrante 2**
+  GRR20245121
 - **Nome do Integrante 3**
 - **Nome do Integrante 4** *(remover caso o grupo tenha 3 integrantes)*
 
